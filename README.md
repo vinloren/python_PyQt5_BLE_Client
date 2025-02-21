@@ -11,5 +11,11 @@ Osservando l'immagine .jpg della finestra PyQt5 qui allegata notiamo:
 2) Allo scadere dei tre minuti, dopo qualche secondo di ritardo, troveremo la combo box riempita con gli identificativi dei devices trovati. Scorrendo la lista ci posizioneremo cliccando sul nome che ci interessa per poi battere "CONNECT" ed entrare in collegamento col server BLE prescelto.
 3) Possiamo collegarci a qualunque BLE device ma poi lo scambio dei dati sarà condizionato dal protocollo specifico disegnato sul server in oggetto, del quale il presente client è ignaro, quindi difficilemnete potremo andare al di là della semplice connessione se non in collegamento col server ESP32 Lyligo T-Display Morse decoder che descriverò in seguito.
 4) La progress bar verde ai piedi della finestra window intrattiene l'utente in attesa del termine dello scan.
-5) Il tasto "INVIO" alla sinistra del campo di input a fondo finestra, provvederà a inviare interrogazioni / cmandi al server le cui risposte appariranno nella text box di destra, mentre nella text box di sinistra troveremo tutti i riferimenti ai dispositivi BLE intercettati nelle vicinanze dallo scan.
+5) Il tasto "INVIO" alla sinistra del campo di input a fondo finestra provvederà a inviare interrogazioni / cmandi al server le cui risposte appariranno nella text box di destra, mentre nella text box di sinistra troveremo tutti i riferimenti ai dispositivi BLE intercettati nelle vicinanze dallo scan.
+
+## Requisiti python
+1) Python 3.11.x
+2) pip install PyQt5
+3) pip install bleak
+
 
